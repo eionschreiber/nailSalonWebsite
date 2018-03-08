@@ -1,0 +1,221 @@
+
+/**************************************************
+Home Page
+**************************************************/
+body{
+
+  background-color: $secondary-color;
+}
+
+h1, h2, h3, h4{
+  text-align: center;
+}
+
+
+#home-header{
+  height: 80vh;
+  display: block;
+  background: url(../img/nails.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  h1{
+    margin-top: 1.5em;
+    color: $secondary-color;
+  }
+}
+
+.home-button{
+  margin-top: 12em;
+  border-bottom: 3px solid rgba(255,255,255, .4);
+  border-right: 1px solid rgba(255,255,255, .4);
+  #phone-icon{
+    width: 20px;
+    margin-right: .5em;
+    margin-bottom: -7px;
+    background: rgba(255,255,255,.3);
+    padding: 6px;
+    border-radius: 50%;
+  }
+  a{
+    font-size: 1.7em;
+  }
+}
+
+
+/**********************
+Hours of Operation
+***********************/
+
+#hours{
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  background-color: $acent-color-two;
+  color: $white;
+
+  h2{
+    padding-bottom: 1em;
+
+  }
+
+  ul{
+    display: block;
+    margin-left: 0;
+    list-style: none;
+
+    li{
+      margin-top: .5em;
+    }
+
+  }
+}
+
+
+
+
+
+
+#services{
+  background-color: $secondary-color;
+
+  .service-add-on:last-of-type{
+    border-bottom: solid 1px $light-primary-color;
+  }
+
+  #manicure{
+    border-top: solid $dark-primary-color;
+  }
+  #pedicure{
+    border-top: solid $primary-color;
+  }
+  .service-add-on{
+    border-top: solid 1px $light-primary-color;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 70px;
+  }
+  .service-offered{
+    p{
+      font-size: 1em;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 0;
+    }
+    .price{
+      font-size: 1.1em;
+      color: $dark-primary-color;
+      text-align: right;
+      margin-top: 1em;
+      margin-left: 4em;
+      margin-bottom: 4em;
+    }
+    .extra-price{
+      font-size: .8em;
+      margin-bottom: 4em;
+      color: $light-primary-color;
+    }
+  }
+  #nail-repairs{
+    display: block;
+    margin: 0;
+    padding-left: .8em;
+    padding-right: .8em;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    text-align: center;
+    font-size: 2em;
+    color: $white;
+    background-color: $primary-color;
+  }
+
+
+  span{
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+  }
+}
+
+
+
+
+/**********************
+Work Gallery
+***********************/
+
+#work{
+  text-align: center;
+
+  header{
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: $acent-color-two;
+    color: $white;
+
+  }
+  h2{
+
+    
+  }
+
+
+  .img-wrap{
+
+    img{
+      display: block;
+      width:100%;
+    }
+
+  }
+  .button-container{
+    background-color: $acent-color-two;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    a{
+      text-transform: capitalize;
+      padding: .6em;
+      font-size: 1.3em;
+      border: solid $secondary-color 1px;
+      color: $secondary-color;
+      -webkit-transition: all .5s ease; /* Safari and Chrome */
+      -moz-transition: all .5s ease; /* Firefox */
+      -ms-transition: all .5s ease; /* IE 9 */
+      -o-transition: all .5s ease; /* Opera */
+      transition: all .5s ease;
+      &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+      }
+      a:before,
+      a:after{
+        background-color: $secondary-color;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+      a:before {
+        right: 0.7em;
+        margin-left: -50%;
+      }
+      a:after {
+        left: 0.7em;
+        margin-right: -50%;
+      }
+     }
+
+
+
+  }

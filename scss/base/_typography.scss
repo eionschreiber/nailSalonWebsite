@@ -1,0 +1,87 @@
+/****************************************************
+Google Fonts Import
+****************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+$text-color: #222;
+$light-text-color: lighten($text-color, 25%);
+$base-font-size: 1em;
+$base-font-family: 'Ubuntu', Helvetica, sans-serif;
+$base-font-weight: 400;
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-weight: 800;
+$heading-font-weight-skinny: 300;
+
+/*****************************************************
+Typography
+*****************************************************/
+body{
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+}
+p{
+  font-family: $base-font-family;
+  font-weight: 300;
+  color: $light-text-color;
+}
+
+nav{
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+h1{
+  font-family: $heading-font-family;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+
+  span{
+    font-size: 3.3em;
+    font-weight: 700;
+  }
+}
+h2{
+  font-family: $heading-font-family;
+  font-weight: 700;
+
+  font-size: 2em;
+}
+
+
+a{
+  text-decoration: none;
+  color: $acent-color-two;
+}
+
+/**********************
+Work Gallery Type
+***********************/
+#work{
+
+  h2{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: $heading-font-weight-skinny;
+    line-height: 1.2;
+
+    span{
+      display: block;
+      font-size: 2em;
+      font-weight: $heading-font-weight;
+    }
+  }
+
+  a{
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight-skinny;
+  }
+}

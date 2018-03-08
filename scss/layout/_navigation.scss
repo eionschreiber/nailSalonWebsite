@@ -1,0 +1,41 @@
+/*****************************************************
+Navigation
+*****************************************************/
+
+
+nav{
+  //position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $secondary-color;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    #logo-container{
+      display: block;
+      padding-top: .7em;
+
+    }
+
+    li{
+      display: inline;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top:0;
+
+      a{
+        text-decoration: none;
+
+        #logo{
+          display: block;
+          margin: 0 auto;
+          width: 150px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*****************************************************
+Buttons
+*****************************************************/
+
+.button{
+  display: block;
+  width: 16.5em;
+  border: none;
+  border-radius: 2em;
+  padding: .5em;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $primary-color;
+  a{
+    color: $secondary-color;
+  }
+}

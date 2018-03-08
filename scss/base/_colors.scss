@@ -1,0 +1,20 @@
+$primary-color: #70CCD8;
+$secondary-color: #FAF8FE;
+$acent-color: #ff9c8c;
+//$acent-color: #f0a6ca;
+$acent-color-two: #9c89b8;
+$pop-out-color: #84539E;
+
+
+
+//Light colors
+$white: #fff;
+$light-primary-color: lighten($primary-color, 10%);
+$light-acent-color: lighten($acent-color, 10%);
+//Dark colors
+
+$dark-primary-color: darken($primary-color, 10%);
+$dark-acent-color: darken($acent-color, 5%);
+
+
+//Text colors
