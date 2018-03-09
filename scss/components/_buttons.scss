@@ -15,3 +15,44 @@ Buttons
     color: $secondary-color;
   }
 }
+
+.button-container{
+  text-align: center;
+  background-color: $acent-color-two;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  a{
+    text-transform: capitalize;
+    padding: .6em;
+    font-size: 1.3em;
+    border: solid $secondary-color 1px;
+    color: $secondary-color;
+    -webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+    &:hover{
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+    }
+    a:before,
+    a:after{
+      background-color: $secondary-color;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+    a:before {
+      right: 0.7em;
+      margin-left: -50%;
+    }
+    a:after {
+      left: 0.7em;
+      margin-right: -50%;
+    }
+}

@@ -2,14 +2,14 @@
 Google Fonts Import
 ****************************************************/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu:300);
 //@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
 $text-color: #222;
 $light-text-color: lighten($text-color, 25%);
 $base-font-size: 1em;
 $base-font-family: 'Ubuntu', Helvetica, sans-serif;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $heading-font-family: 'Open Sans', sans-serif;
 $heading-font-weight: 800;
 $heading-font-weight-skinny: 300;
@@ -50,9 +50,26 @@ h1{
 h2{
   font-family: $heading-font-family;
   font-weight: 700;
-
   font-size: 2em;
 }
+/**********************
+Section Headings
+***********************/
+h2{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: $heading-font-weight-skinny;
+  line-height: 1.2;
+
+  span{
+    display: block;
+    font-size: 2em;
+    font-weight: $heading-font-weight;
+  }
+}
+
 
 
 a{
@@ -63,25 +80,32 @@ a{
 /**********************
 Work Gallery Type
 ***********************/
+h3{
+  font-family: $base-font-size;
+  font-weight: $base-font-weight;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+a{
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight-skinny;
+}
 #work{
-
-  h2{
-    padding-top: 3em;
-    padding-bottom: 3em;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-weight: $heading-font-weight-skinny;
-    line-height: 1.2;
-
-    span{
-      display: block;
-      font-size: 2em;
-      font-weight: $heading-font-weight;
-    }
+  p{
+    font-weight: 400;
   }
+}
 
-  a{
+
+/**********************
+Footer Type
+***********************/
+
+footer{
+  p{
     font-family: $heading-font-family;
     font-weight: $heading-font-weight-skinny;
+    font-size: .7em;
   }
 }

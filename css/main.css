@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu:300);
 html {
   line-height: 1.15;
   /* 1 */
@@ -390,6 +390,13 @@ template {
 [hidden] {
   display: none; }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 /****************************************************
 Google Fonts Import
 ****************************************************/
@@ -400,7 +407,7 @@ body {
   color: #222;
   font-size: 1em;
   font-family: "Ubuntu", Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6; }
 
 p {
@@ -427,6 +434,21 @@ h2 {
   font-weight: 700;
   font-size: 2em; }
 
+/**********************
+Section Headings
+***********************/
+h2 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2; }
+  h2 span {
+    display: block;
+    font-size: 2em;
+    font-weight: 800; }
+
 a {
   text-decoration: none;
   color: #9c89b8; }
@@ -434,20 +456,26 @@ a {
 /**********************
 Work Gallery Type
 ***********************/
-#work h2 {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  text-transform: uppercase;
-  font-size: 1.5em;
+h3 {
+  font-family: 1em;
   font-weight: 300;
-  line-height: 1.2; }
-  #work h2 span {
-    display: block;
-    font-size: 2em;
-    font-weight: 800; }
-#work a {
+  font-size: 2em;
+  text-transform: uppercase; }
+
+a {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+
+#work p {
+  font-weight: 400; }
+
+/**********************
+Footer Type
+***********************/
+footer p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: .7em; }
 
 /*****************************************************
 Navigation
@@ -490,6 +518,69 @@ Buttons
   background-color: #70CCD8; }
   .button a {
     color: #FAF8FE; }
+
+.button-container {
+  text-align: center;
+  background-color: #9c89b8;
+  padding-top: 8em;
+  padding-bottom: 8em; }
+  .button-container a {
+    text-transform: capitalize;
+    padding: .6em;
+    font-size: 1.3em;
+    border: solid #FAF8FE 1px;
+    color: #FAF8FE;
+    -webkit-transition: all .5s ease;
+    /* Safari and Chrome */
+    -moz-transition: all .5s ease;
+    /* Firefox */
+    -ms-transition: all .5s ease;
+    /* IE 9 */
+    -o-transition: all .5s ease;
+    /* Opera */
+    transition: all .5s ease; }
+    .button-container a:hover {
+      background-color: #FAF8FE;
+      color: #70CCD8; }
+  .button-container a:before,
+  .button-container a:after {
+    background-color: #FAF8FE;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  .button-container a:before {
+    right: 0.7em;
+    margin-left: -50%; }
+  .button-container a:after {
+    left: 0.7em;
+    margin-right: -50%; }
+
+footer {
+  text-align: center; }
+  footer #social-media-links-container a {
+    background-color: #9c89b8;
+    border-radius: 50%;
+    display: inline-block;
+    padding: .7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em; }
+    footer #social-media-links-container a:hover {
+      background-color: #48becd; }
+  footer #social-media-links-container img {
+    display: block;
+    width: 25px; }
+  footer p {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 8em; }
+    footer p a {
+      color: #48becd; }
+      footer p a:hover {
+        color: #9c89b8; }
 
 /**************************************************
 Home Page
@@ -606,42 +697,39 @@ Work Gallery
   #work .img-wrap img {
     display: block;
     width: 100%; }
-  #work .button-container {
-    background-color: #9c89b8;
-    padding-top: 8em;
-    padding-bottom: 8em; }
-    #work .button-container a {
-      text-transform: capitalize;
-      padding: .6em;
-      font-size: 1.3em;
-      border: solid #FAF8FE 1px;
-      color: #FAF8FE;
-      -webkit-transition: all .5s ease;
-      /* Safari and Chrome */
-      -moz-transition: all .5s ease;
-      /* Firefox */
-      -ms-transition: all .5s ease;
-      /* IE 9 */
-      -o-transition: all .5s ease;
-      /* Opera */
-      transition: all .5s ease; }
-      #work .button-container a:hover {
-        background-color: #FAF8FE;
-        color: #70CCD8; }
-    #work .button-container a:before,
-    #work .button-container a:after {
-      background-color: #FAF8FE;
-      content: "";
-      display: inline-block;
-      height: 1px;
-      position: relative;
-      vertical-align: middle;
-      width: 50%; }
-    #work .button-container a:before {
-      right: 0.7em;
-      margin-left: -50%; }
-    #work .button-container a:after {
-      left: 0.7em;
-      margin-right: -50%; }
+
+#directions {
+  background-color: #FAF8FE; }
+  #directions h2 {
+    padding-bottom: 1em; }
+  #directions #address-container {
+    padding-bottom: 3em; }
+    #directions #address-container .button-container {
+      background-color: #FAF8FE; }
+      #directions #address-container .button-container img {
+        width: 25px; }
+      #directions #address-container .button-container a {
+        color: #70CCD8;
+        border: solid 1px #70CCD8; }
+        #directions #address-container .button-container a:hover {
+          background-color: #70CCD8;
+          color: #fff; }
+        #directions #address-container .button-container a img:hover {
+          fill: #fff; }
+      #directions #address-container .button-container a:before,
+      #directions #address-container .button-container a:after {
+        background-color: #70CCD8; }
+    #directions #address-container p {
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      padding: 0; }
+
+#contact {
+  background-color: #98dae3;
+  padding-bottom: 2em; }
+  #contact form {
+    width: 90%;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

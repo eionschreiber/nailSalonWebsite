@@ -1,0 +1,36 @@
+footer{
+
+  text-align: center;
+
+  #social-media-links-container{
+
+    a{
+      background-color: $acent-color-two;
+      border-radius: 50%;
+      display: inline-block;
+      padding: .7em;
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-bottom: 3em;
+      &:hover{
+        background-color: $dark-primary-color;
+      }
+
+    }
+      img{
+        display: block;
+        width: 25px;
+    }
+  }
+  p{
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 8em;
+    a{
+      color: $dark-primary-color;
+      &:hover{
+        color: $acent-color-two;
+      }
+    }
+  }
+}

@@ -160,62 +160,72 @@ Work Gallery
     padding-bottom: 1.5em;
     background-color: $acent-color-two;
     color: $white;
-
   }
-  h2{
-
-    
-  }
-
 
   .img-wrap{
-
     img{
       display: block;
       width:100%;
     }
-
   }
-  .button-container{
-    background-color: $acent-color-two;
-    padding-top: 8em;
-    padding-bottom: 8em;
-    a{
-      text-transform: capitalize;
-      padding: .6em;
-      font-size: 1.3em;
-      border: solid $secondary-color 1px;
-      color: $secondary-color;
-      -webkit-transition: all .5s ease; /* Safari and Chrome */
-      -moz-transition: all .5s ease; /* Firefox */
-      -ms-transition: all .5s ease; /* IE 9 */
-      -o-transition: all .5s ease; /* Opera */
-      transition: all .5s ease;
-      &:hover{
-        background-color: $secondary-color;
-        color: $primary-color;
+}
+
+
+
+
+
+
+#directions{
+  background-color: $secondary-color;
+
+  h2{
+    padding-bottom: 1em;
+  }
+
+  #address-container{
+    padding-bottom: 3em;
+
+    .button-container{
+      background-color: $secondary-color;
+      img{
+        width: 25px;
       }
+      a{
+        color: $primary-color;
+        border: solid 1px $primary-color;
+        &:hover{
+          background-color: $primary-color;
+          color: $white;
+        }
+        img:hover{
+          fill: $white;
+        }
       }
       a:before,
       a:after{
-        background-color: $secondary-color;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 50%;
-      }
-      a:before {
-        right: 0.7em;
-        margin-left: -50%;
-      }
-      a:after {
-        left: 0.7em;
-        margin-right: -50%;
-      }
-     }
-
+        background-color: $primary-color;
+    }
 
 
   }
+    p{
+      width: 50%;
+      margin-left:25%;
+      margin-right: 25%;
+      padding: 0;
+    }
+  }
+}
+
+
+
+
+#contact{
+  background-color: $light-primary-color;
+  padding-bottom: 2em;
+
+  form{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
