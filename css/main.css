@@ -413,7 +413,7 @@ body {
 p {
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: 300;
-  color: #626262; }
+  color: #959595; }
 
 nav {
   font-family: "Open Sans", sans-serif;
@@ -462,7 +462,7 @@ h3 {
   font-size: 2em;
   text-transform: uppercase; }
 
-a {
+a, button {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
@@ -503,22 +503,12 @@ nav {
           display: block;
           margin: 0 auto;
           width: 150px; }
+        nav ul li a:hover {
+          color: #70CCD8; }
 
 /*****************************************************
 Buttons
 *****************************************************/
-.button {
-  display: block;
-  width: 16.5em;
-  border: none;
-  border-radius: 2em;
-  padding: .5em;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #70CCD8; }
-  .button a {
-    color: #FAF8FE; }
-
 .button-container {
   text-align: center;
   background-color: #9c89b8;
@@ -542,21 +532,20 @@ Buttons
     .button-container a:hover {
       background-color: #FAF8FE;
       color: #70CCD8; }
-  .button-container a:before,
-  .button-container a:after {
-    background-color: #FAF8FE;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%; }
-  .button-container a:before {
-    right: 0.7em;
-    margin-left: -50%; }
-  .button-container a:after {
-    left: 0.7em;
-    margin-right: -50%; }
+    .button-container a:before, .button-container a:after {
+      background-color: #FAF8FE;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%; }
+    .button-container a:before {
+      right: 0.7em;
+      margin-left: -50%; }
+    .button-container a:after {
+      left: 0.7em;
+      margin-right: -50%; }
 
 footer {
   text-align: center; }
@@ -592,7 +581,7 @@ h1, h2, h3, h4 {
   text-align: center; }
 
 #home-header {
-  height: 80vh;
+  height: 90vh;
   display: block;
   background: url(../img/nails.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -605,9 +594,9 @@ h1, h2, h3, h4 {
     color: #FAF8FE; }
 
 .home-button {
-  margin-top: 12em;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.4); }
+  padding-top: 14em;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: inherit; }
   .home-button #phone-icon {
     width: 20px;
     margin-right: .5em;
@@ -616,7 +605,8 @@ h1, h2, h3, h4 {
     padding: 6px;
     border-radius: 50%; }
   .home-button a {
-    font-size: 1.7em; }
+    font-size: 1.7em;
+    background-color: #9c89b8; }
 
 /**********************
 Hours of Operation
@@ -705,6 +695,7 @@ Work Gallery
   #directions #address-container {
     padding-bottom: 3em; }
     #directions #address-container .button-container {
+      padding-top: 2em;
       background-color: #FAF8FE; }
       #directions #address-container .button-container img {
         width: 25px; }
@@ -716,9 +707,8 @@ Work Gallery
           color: #fff; }
         #directions #address-container .button-container a img:hover {
           fill: #fff; }
-      #directions #address-container .button-container a:before,
-      #directions #address-container .button-container a:after {
-        background-color: #70CCD8; }
+        #directions #address-container .button-container a:before, #directions #address-container .button-container a:after {
+          background-color: #70CCD8; }
     #directions #address-container p {
       width: 50%;
       margin-left: 25%;
@@ -726,10 +716,50 @@ Work Gallery
       padding: 0; }
 
 #contact {
+  color: #fff;
   background-color: #98dae3;
   padding-bottom: 2em; }
   #contact form {
-    width: 90%;
-    margin: 0 auto; }
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 5%; }
+    #contact form label {
+      display: block;
+      padding-bottom: .5em;
+      padding-top: .5em; }
+    #contact form input[type="text"], #contact form input[type="email"], #contact form textarea {
+      border: none;
+      width: 90%;
+      border-radius: .1rem; }
+      #contact form input[type="text"]:focus, #contact form input[type="text"]:focus, #contact form input[type="email"]:focus, #contact form input[type="email"]:focus, #contact form textarea:focus, #contact form textarea:focus {
+        outline-color: #48becd; }
+      #contact form input[type="text"]::placeholder, #contact form input[type="email"]::placeholder, #contact form textarea::placeholder {
+        color: #959595;
+        margin-left: .5em; }
+    #contact form input[type="text"], #contact form input[type="email"] {
+      height: 2em; }
+    #contact form textarea {
+      height: 11em; }
+    #contact form button {
+      text-align: center;
+      padding: 1em;
+      color: white;
+      border: solid white 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 0 auto;
+      align-items: center;
+      color: #FAF8FE;
+      -webkit-transition: all .5s ease;
+      /* Safari and Chrome */
+      -moz-transition: all .5s ease;
+      /* Firefox */
+      -ms-transition: all .5s ease;
+      /* IE 9 */
+      -o-transition: all .5s ease;
+      /* Opera */
+      transition: all .5s ease; }
+      #contact form button:hover {
+        background-color: #FAF8FE;
+        color: #70CCD8; }
 
 /*# sourceMappingURL=main.css.map */

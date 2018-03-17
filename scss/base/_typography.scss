@@ -4,9 +4,6 @@ Google Fonts Import
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu:300);
 //@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-
-$text-color: #222;
-$light-text-color: lighten($text-color, 25%);
 $base-font-size: 1em;
 $base-font-family: 'Ubuntu', Helvetica, sans-serif;
 $base-font-weight: 300;
@@ -87,7 +84,7 @@ h3{
   text-transform: uppercase;
 }
 
-a{
+a, button{
   font-family: $heading-font-family;
   font-weight: $heading-font-weight-skinny;
 }

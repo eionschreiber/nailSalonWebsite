@@ -13,7 +13,7 @@ h1, h2, h3, h4{
 
 
 #home-header{
-  height: 80vh;
+  height: 90vh;
   display: block;
   background: url(../img/nails.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -29,9 +29,9 @@ h1, h2, h3, h4{
 }
 
 .home-button{
-  margin-top: 12em;
-  border-bottom: 3px solid rgba(255,255,255, .4);
+  padding-top: 14em;
   border-right: 1px solid rgba(255,255,255, .4);
+  background-color: inherit;
   #phone-icon{
     width: 20px;
     margin-right: .5em;
@@ -42,6 +42,8 @@ h1, h2, h3, h4{
   }
   a{
     font-size: 1.7em;
+    background-color: $acent-color-two;
+
   }
 }
 
@@ -186,6 +188,7 @@ Work Gallery
     padding-bottom: 3em;
 
     .button-container{
+      padding-top: 2em;
       background-color: $secondary-color;
       img{
         width: 25px;
@@ -200,11 +203,11 @@ Work Gallery
         img:hover{
           fill: $white;
         }
+        &:before,
+        &:after{
+          background-color: $primary-color;
       }
-      a:before,
-      a:after{
-        background-color: $primary-color;
-    }
+      }
 
 
   }
@@ -221,11 +224,58 @@ Work Gallery
 
 
 #contact{
+  color: $white;
   background-color: $light-primary-color;
   padding-bottom: 2em;
 
   form{
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 5%;
+    label{
+      display: block;
+      padding-bottom: .5em;
+      padding-top: .5em;
+    }
+    input[type="text"], input[type="email"], textarea {
+      border: none;
+      width: 90%;
+      border-radius: .1rem;
+      &:focus, &:focus{
+        outline-color: $dark-primary-color;
+      }
+      &::placeholder {
+        color: $light-text-color;
+        margin-left: .5em;
+      }
+    }
+    input[type="text"], input[type="email"]{
+      height: 2em;
+    }
+
+    textarea{
+      height: 11em;
+    }
+    button{
+
+      text-align: center;
+      padding: 1em;
+      color: white;
+      border: solid white 1px;
+      background-color: rgba(255,255,255, .1);
+      margin: 0 auto;
+      align-items: center;
+      color: $secondary-color;
+      -webkit-transition: all .5s ease; /* Safari and Chrome */
+      -moz-transition: all .5s ease; /* Firefox */
+      -ms-transition: all .5s ease; /* IE 9 */
+      -o-transition: all .5s ease; /* Opera */
+      transition: all .5s ease;
+      &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+
   }
 }

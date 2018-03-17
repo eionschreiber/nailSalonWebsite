@@ -28,10 +28,9 @@
               </ul>
             </nav>
             <h1>Amazing Things Come From<br><span>Passion</span></h1>
-            <button class="button home-button">
-              <img id="phone-icon" src="img/phone_icon.svg" alt="Phone Icon">
-              <a  href="tel:262-501-3880"> 262-501-3880</a>
-            </button>
+            <div class="home-button button-container">
+              <a href="tel:262-501-3880"><img id="phone-icon" src="img/phone_icon.svg" alt="Google Maps Icon">262-501-3880</a>
+            </div>
           </header>
 
 
@@ -135,22 +134,24 @@
               <!--</div> -->
             <div id="contact">
               <h2>Got Questions?<span>Contact Us</span></h2>
-              <form action="#" method="post">
+              <form action="#" method="post" autocomplete="on">
                 <div>
                   <label for="name">Name: </label>
-                  <input id="name" type="text" name="user_name" placeholder="First and Last Name" required>
+                  <input id="name" type="text" name="user_name" placeholder="Your Name" required>
                 </div>
+                <!--
                 <div>
                   <label for="phone">Phone Number: </label>
                   <input id="phone" name="phone" type="tel" placeholder="1234567890" pattern="[0-9]{10}" title="no dashes or dots please" required>
                 </div>
+              -->
                 <div>
                   <label for="email">Email: </label>
-                  <input id="email" type="email" name="user_email" placeholder="email" required>
+                  <input id="email" type="email" name="user_email" placeholder="E-Mail" required>
                 </div>
                 <div>
                   <label for="mes">Message: <label>
-                  <textarea id="mes" name="user_message" required></textarea>
+                  <textarea id="mes" name="user_message" required autocomplete="off"></textarea>
                 </div>
                 <button type="submit">Send Your Message</button>
               </form>

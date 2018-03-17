@@ -17,4 +17,12 @@ $dark-primary-color: darken($primary-color, 10%);
 $dark-acent-color: darken($acent-color, 5%);
 
 
+//rgba colors
+
+$acent-color-two-rgb: rgba(214, 129, 255, .4);
+
+
 //Text colors
+
+$text-color: #222;
+$light-text-color: lighten($text-color, 45%);

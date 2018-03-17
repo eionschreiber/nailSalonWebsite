@@ -2,20 +2,6 @@
 Buttons
 *****************************************************/
 
-.button{
-  display: block;
-  width: 16.5em;
-  border: none;
-  border-radius: 2em;
-  padding: .5em;
-  margin: 0 auto;
-  text-align: center;
-  background-color: $primary-color;
-  a{
-    color: $secondary-color;
-  }
-}
-
 .button-container{
   text-align: center;
   background-color: $acent-color-two;
@@ -36,9 +22,8 @@ Buttons
       background-color: $secondary-color;
       color: $primary-color;
     }
-    }
-    a:before,
-    a:after{
+    &:before,
+    &:after{
       background-color: $secondary-color;
       content: "";
       display: inline-block;
@@ -47,12 +32,15 @@ Buttons
       vertical-align: middle;
       width: 50%;
     }
-    a:before {
+    &:before {
       right: 0.7em;
       margin-left: -50%;
     }
-    a:after {
+    &:after {
       left: 0.7em;
       margin-right: -50%;
     }
+    }
+
+
 }
