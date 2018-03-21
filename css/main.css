@@ -492,19 +492,29 @@ nav {
     nav ul #logo-container {
       display: block;
       padding-top: .7em; }
-    nav ul li {
-      display: inline;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 0; }
-      nav ul li a {
-        text-decoration: none; }
-        nav ul li a #logo {
-          display: block;
-          margin: 0 auto;
-          width: 150px; }
-        nav ul li a:hover {
-          color: #70CCD8; }
+      @media (min-width: 576px) {
+        nav ul #logo-container {
+          display: inline-block;
+          padding-right: 7.6em; } }
+  nav li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0; }
+    nav li a {
+      text-decoration: none; }
+      @media (min-width: 576px) {
+        nav li a {
+          font-size: 1.2em; } }
+      nav li a #logo {
+        display: block;
+        margin: 0 auto;
+        width: 150px; }
+        @media (min-width: 576px) {
+          nav li a #logo {
+            display: inline-block; } }
+    nav li:hover {
+      color: #70CCD8; }
 
 /*****************************************************
 Buttons
@@ -579,6 +589,25 @@ body {
 
 h1, h2, h3, h4 {
   text-align: center; }
+  @media (min-width: 576px) {
+    h1, h2, h3, h4 {
+      font-size: 1.2em; } }
+  @media (min-width: 768px) {
+    h1, h2, h3, h4 {
+      font-size: 1.4em; } }
+  @media (min-width: 992px) {
+    h1, h2, h3, h4 {
+      font-size: 1.6em; } }
+
+@media (min-width: 576px) {
+  p, a {
+    font-size: 1.2em; } }
+@media (min-width: 768px) {
+  p, a {
+    font-size: 1.4em; } }
+@media (min-width: 992px) {
+  p, a {
+    font-size: 1.6em; } }
 
 #home-header {
   height: 90vh;
@@ -589,14 +618,23 @@ h1, h2, h3, h4 {
   -o-background-size: cover;
   background-size: cover;
   background-position: center; }
-  #home-header h1 {
+  #home-header div h1 {
     margin-top: 1.5em;
     color: #FAF8FE; }
+    @media (min-width: 576px) {
+      #home-header div h1 {
+        font-size: 1.5em; } }
+    @media (min-width: 768px) {
+      #home-header div h1 {
+        font-size: 2em; } }
 
 .home-button {
-  padding-top: 14em;
+  padding-top: 11em;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
   background-color: inherit; }
+  @media (min-width: 768px) {
+    .home-button {
+      padding-top: 10em; } }
   .home-button #phone-icon {
     width: 20px;
     margin-right: .5em;
@@ -617,8 +655,17 @@ Hours of Operation
   padding-bottom: 5em;
   background-color: #9c89b8;
   color: #fff; }
+  @media (min-width: 768px) {
+    #hours {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around; } }
   #hours h2 {
     padding-bottom: 1em; }
+    @media (min-width: 768px) {
+      #hours h2 {
+        padding-top: 0; } }
   #hours ul {
     display: block;
     margin-left: 0;
@@ -628,19 +675,34 @@ Hours of Operation
 
 #services {
   background-color: #FAF8FE; }
-  #services .service-add-on:last-of-type {
-    border-bottom: solid 1px #98dae3; }
-  #services #manicure {
-    border-top: solid #48becd; }
-  #services #pedicure {
-    border-top: solid #70CCD8; }
+  @media (min-width: 576px) {
+    #services .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
+  @media (min-width: 992px) {
+    #services .service-container {
+      justify-content: flex-start; } }
   #services .service-add-on {
-    border-top: solid 1px #98dae3; }
+    border: solid 1px #98dae3; }
+    @media (min-width: 576px) {
+      #services .service-add-on {
+        width: 49.65%;
+        font-size: .85em; } }
+    @media (min-width: 768px) {
+      #services .service-add-on {
+        width: 33.07%; } }
+    @media (min-width: 992px) {
+      #services .service-add-on {
+        width: 19.77%; } }
   #services img {
     display: block;
     margin: 0 auto;
     margin-top: 3em;
     width: 70px; }
+    @media (min-width: 768px) {
+      #services img {
+        margin-top: 1em; } }
   #services .service-offered p {
     font-size: 1em;
     margin-left: 2em;
@@ -653,21 +715,37 @@ Hours of Operation
     margin-top: 1em;
     margin-left: 4em;
     margin-bottom: 4em; }
+    @media (min-width: 768px) {
+      #services .service-offered .price {
+        margin-bottom: 1em; } }
   #services .service-offered .extra-price {
     font-size: .8em;
     margin-bottom: 4em;
     color: #98dae3; }
+    @media (min-width: 768px) {
+      #services .service-offered .extra-price {
+        margin-bottom: 1em; } }
   #services #nail-repairs {
     display: block;
+    width: 100%;
     margin: 0;
-    padding-left: .8em;
-    padding-right: .8em;
     padding-top: 8em;
     padding-bottom: 8em;
     text-align: center;
     font-size: 2em;
     color: #fff;
     background-color: #70CCD8; }
+    @media (min-width: 576px) {
+      #services #nail-repairs {
+        height: 100%;
+        font-size: 2em;
+        padding: 0; } }
+    @media (min-width: 992px) {
+      #services #nail-repairs {
+        width: 100vw;
+        margin-top: -5px;
+        padding-top: 2em;
+        margin-bottom: 2em; } }
   #services span {
     display: block;
     font-size: 3em;
@@ -687,6 +765,19 @@ Work Gallery
   #work .img-wrap img {
     display: block;
     width: 100%; }
+    @media (min-width: 768px) {
+      #work .img-wrap img {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      #work .img-wrap img {
+        width: 25%; } }
+  @media (min-width: 768px) {
+    #work .img-wrap {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media (min-width: 768px) {
+    #work .button-container a {
+      font-size: 1.3em; } }
 
 #directions {
   background-color: #FAF8FE; }
@@ -694,6 +785,9 @@ Work Gallery
     padding-bottom: 1em; }
   #directions #address-container {
     padding-bottom: 3em; }
+    #directions #address-container #phone-number-container img {
+      margin-left: 25%;
+      width: 20px; }
     #directions #address-container .button-container {
       padding-top: 2em;
       background-color: #FAF8FE; }
@@ -708,12 +802,18 @@ Work Gallery
         #directions #address-container .button-container a img:hover {
           fill: #fff; }
         #directions #address-container .button-container a:before, #directions #address-container .button-container a:after {
+          display: none;
           background-color: #70CCD8; }
     #directions #address-container p {
       width: 50%;
       margin-left: 25%;
       margin-right: 25%;
       padding: 0; }
+  @media (min-width: 992px) {
+    #directions {
+      float: left;
+      display: inline-block;
+      width: 50%; } }
 
 #contact {
   color: #fff;
@@ -761,5 +861,10 @@ Work Gallery
       #contact form button:hover {
         background-color: #FAF8FE;
         color: #70CCD8; }
+  @media (min-width: 992px) {
+    #contact {
+      display: inline-block;
+      width: 50%;
+      margin-right: -4px; } }
 
 /*# sourceMappingURL=main.css.map */

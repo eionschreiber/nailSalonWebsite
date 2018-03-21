@@ -19,6 +19,13 @@ nav{
       display: block;
       padding-top: .7em;
 
+      //media queries
+      @include sm{
+          display: inline-block;
+          padding-right: 7.6em;
+        }
+      }
+
     }
 
     li{
@@ -26,19 +33,26 @@ nav{
       margin-left: 10px;
       margin-right: 10px;
       margin-top:0;
-
       a{
         text-decoration: none;
 
+        //media queries
+        @include sm{
+            font-size: 1.2em;
+          }
         #logo{
           display: block;
           margin: 0 auto;
           width: 150px;
+
+          //media queries
+          @include sm{
+              display: inline-block;
+            }
+          }
         }
         &:hover{
           color: $primary-color;
         }
       }
     }
-  }
-}

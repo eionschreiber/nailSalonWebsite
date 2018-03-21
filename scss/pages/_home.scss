@@ -9,6 +9,27 @@ body{
 
 h1, h2, h3, h4{
   text-align: center;
+  @include sm{
+    font-size: 1.2em;
+  }
+  @include md{
+    font-size: 1.4em;
+  }
+  @include lg{
+    font-size: 1.6em;
+  }
+}
+
+p, a{
+  @include sm{
+    font-size: 1.2em;
+  }
+  @include md{
+    font-size: 1.4em;
+  }
+  @include lg{
+    font-size: 1.6em;
+  }
 }
 
 
@@ -22,16 +43,29 @@ h1, h2, h3, h4{
   background-size: cover;
   background-position: center;
 
-  h1{
-    margin-top: 1.5em;
-    color: $secondary-color;
+  div{
+    h1{
+      margin-top: 1.5em;
+      color: $secondary-color;
+      @include sm{
+        font-size: 1.5em;
+      }
+      @include md{
+        font-size: 2em;
+      }
+    }
   }
+
 }
 
 .home-button{
-  padding-top: 14em;
+  padding-top: 11em;
   border-right: 1px solid rgba(255,255,255, .4);
   background-color: inherit;
+
+  @include md{
+    padding-top: 10em;
+  }
   #phone-icon{
     width: 20px;
     margin-right: .5em;
@@ -58,10 +92,20 @@ Hours of Operation
   padding-bottom: 5em;
   background-color: $acent-color-two;
   color: $white;
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    //justify-content: center;
+
+  }
 
   h2{
     padding-bottom: 1em;
-
+    @include md{
+      padding-top: 0;
+    }
   }
 
   ul{
@@ -84,18 +128,29 @@ Hours of Operation
 #services{
   background-color: $secondary-color;
 
-  .service-add-on:last-of-type{
-    border-bottom: solid 1px $light-primary-color;
+  .service-container{
+    @include sm{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include lg{
+      justify-content: flex-start;
+    }
   }
 
-  #manicure{
-    border-top: solid $dark-primary-color;
-  }
-  #pedicure{
-    border-top: solid $primary-color;
-  }
   .service-add-on{
-    border-top: solid 1px $light-primary-color;
+    border: solid 1px $light-primary-color;
+    @include sm{
+      width:49.65%;
+      font-size: .85em;
+    }
+    @include md {
+      width: 33.07%;
+    }
+    @include lg {
+      width:19.77%;
+    }
   }
 
   img{
@@ -103,6 +158,9 @@ Hours of Operation
     margin: 0 auto;
     margin-top: 3em;
     width: 70px;
+    @include md{
+      margin-top: 1em;
+    }
   }
   .service-offered{
     p{
@@ -118,24 +176,40 @@ Hours of Operation
       margin-top: 1em;
       margin-left: 4em;
       margin-bottom: 4em;
+      @include md {
+        margin-bottom: 1em;
+      }
     }
     .extra-price{
       font-size: .8em;
       margin-bottom: 4em;
       color: $light-primary-color;
+      @include md {
+        margin-bottom: 1em;
+      }
     }
   }
   #nail-repairs{
     display: block;
+    width: 100%;
     margin: 0;
-    padding-left: .8em;
-    padding-right: .8em;
     padding-top: 8em;
     padding-bottom: 8em;
     text-align: center;
     font-size: 2em;
     color: $white;
     background-color: $primary-color;
+    @include sm {
+      height: 100%;
+      font-size: 2em;
+      padding: 0;
+    }
+    @include lg{
+      width: 100vw;
+      margin-top:-5px;
+      padding-top: 2em;
+      margin-bottom: 2em;
+    }
   }
 
 
@@ -168,6 +242,26 @@ Work Gallery
     img{
       display: block;
       width:100%;
+
+
+      @include md{
+        width: 50%;
+      }
+
+      @include lg{
+        width: 25%;
+      }
+    }
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @include md {
+    .button-container{
+      a{
+        font-size: 1.3em;
+      }
     }
   }
 }
@@ -182,10 +276,20 @@ Work Gallery
 
   h2{
     padding-bottom: 1em;
+
+    @include lg{
+    }
   }
 
   #address-container{
     padding-bottom: 3em;
+
+    #phone-number-container{
+      img{
+        margin-left:25%;
+        width: 20px;
+      }
+    }
 
     .button-container{
       padding-top: 2em;
@@ -205,6 +309,7 @@ Work Gallery
         }
         &:before,
         &:after{
+          display: none;
           background-color: $primary-color;
       }
       }
@@ -217,6 +322,12 @@ Work Gallery
       margin-right: 25%;
       padding: 0;
     }
+  }
+
+  @include lg {
+    float: left;
+    display: inline-block;
+    width: 50%;
   }
 }
 
@@ -277,5 +388,11 @@ Work Gallery
       }
     }
 
+  }
+
+  @include lg {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
   }
 }
