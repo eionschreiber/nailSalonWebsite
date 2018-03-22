@@ -558,7 +558,10 @@ Buttons
       margin-right: -50%; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  background-color: #e4dfec; }
+  footer h2 {
+    margin-top: 0; }
   footer #social-media-links-container a {
     background-color: #9c89b8;
     border-radius: 50%;
@@ -779,6 +782,49 @@ Work Gallery
     #work .button-container a {
       font-size: 1.3em; } }
 
+#bio h2 {
+  padding-bottom: 2em; }
+  @media (min-width: 768px) {
+    #bio h2 {
+      width: 100%; } }
+@media (min-width: 768px) {
+  #bio .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+@media (min-width: 992px) {
+  #bio .flex-wrapper {
+    padding-bottom: 3.5em; } }
+#bio .flex-wrapper div {
+  padding-bottom: 1em; }
+  #bio .flex-wrapper div img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; }
+  #bio .flex-wrapper div h3 {
+    padding-top: .5em;
+    font-size: 1em; }
+    @media (min-width: 768px) {
+      #bio .flex-wrapper div h3 {
+        font-size: 1em; } }
+    @media (min-width: 992px) {
+      #bio .flex-wrapper div h3 {
+        font-size: 1.25em; } }
+#bio .flex-wrapper p {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 1.5em; }
+  @media (min-width: 768px) {
+    #bio .flex-wrapper p {
+      font-size: 1em;
+      width: 45%;
+      margin: 0; } }
+  @media (min-width: 992px) {
+    #bio .flex-wrapper p {
+      width: 40%;
+      font-size: 1.25em; } }
+
 #directions {
   background-color: #FAF8FE; }
   #directions h2 {
@@ -818,7 +864,7 @@ Work Gallery
 #contact {
   color: #fff;
   background-color: #98dae3;
-  padding-bottom: 2em; }
+  padding-bottom: 3em; }
   #contact form {
     width: 85%;
     padding-left: 10%;

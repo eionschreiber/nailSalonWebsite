@@ -267,7 +267,62 @@ Work Gallery
 }
 
 
+#bio{
 
+  h2{
+    padding-bottom: 2em;
+    @include md{
+      width: 100%;
+    }
+  }
+  .flex-wrapper{
+    @include md{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    @include lg{
+      padding-bottom: 3.5em;
+    }
+
+
+    div{
+      padding-bottom: 1em;
+
+      img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+    h3{
+      padding-top: .5em;
+      font-size: 1em;
+      @include md{
+        font-size: 1em;
+      }
+      @include lg{
+        font-size: 1.25em;
+      }
+    }
+    }
+    p{
+      width: 85%;
+      margin: 0 auto;
+      padding-bottom: 1.5em;
+      @include md{
+        font-size: 1em;
+        width: 45%;
+        margin: 0;
+      }
+      @include lg{
+        width: 40%;
+        font-size: 1.25em;
+      }
+    }
+  }
+}
 
 
 
@@ -337,7 +392,7 @@ Work Gallery
 #contact{
   color: $white;
   background-color: $light-primary-color;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 
   form{
     width: 85%;
