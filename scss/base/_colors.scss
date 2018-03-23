@@ -10,7 +10,7 @@ $pop-out-color: #84539E;
 //Light colors
 $white: #fff;
 $light-primary-color: lighten($primary-color, 10%);
-$light-acent-color: lighten($acent-color, 10%);
+$light-acent-color: lighten($acent-color-two, 10%);
 $light-acent-color-two: lighten($acent-color-two, 27%);
 //Dark colors
 
@@ -21,7 +21,7 @@ $dark-acent-color: darken($acent-color, 5%);
 //rgba colors
 
 $acent-color-two-rgb: rgba(214, 129, 255, .4);
-
+$light-white-background-color: rgba(255,255,255, .4);
 
 //Text colors
 
