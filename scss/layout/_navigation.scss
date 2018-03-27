@@ -18,7 +18,7 @@ Navigation
     li a{
       padding: 8px 8px 8px 32px;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 1.5em;
       color: #818181;
       display: block;
       transition: 0.3s;
@@ -37,19 +37,37 @@ Navigation
 #mySideNav .closebtn{
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: .2em;
+  font-size: 2.5em;
   margin-left: 50px;
 }
 
-#menu-icon{
-//  width: 100%;
-  position: fixed;
-  right: 1em;
-  color: rgba(0,0,0,0.7);
-  //background-color: $light-white-background-color;
-  cursor: pointer;
-  font-size: 1.4em;
+
+
+#nav-icons{
+  text-align: center;
+
+  #logo{
+    width: 7em;
+    @include sm{
+      width: 8em;
+    }
+    @include md{
+      width: 10em;
+    }
+  }
+
+  #menu-icon{
+    position: fixed;
+    left: 1em;
+    top: .5em;
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;
+    font-size: 1.5em;
+
+  }
+
+
 }
 /*
 nav{
