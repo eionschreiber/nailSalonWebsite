@@ -3,6 +3,7 @@
 Home Page
 **************************************************/
 body{
+  
 
   background-color: $secondary-color;
 }
@@ -79,6 +80,11 @@ p, a{
   a{
     font-size: 1.7em;
     background-color: $acent-color-two;
+    &:hover{
+      #phone-icon{
+      background-color: $primary-color;
+      }
+    }
 
   }
 }
@@ -329,17 +335,17 @@ Work Gallery
 
 
 #directions{
-  background-color: $light-acent-color-two;
+  background-color: $light-primary-color;
 
   h2{
     padding-bottom: 1em;
+    color: $white;
 
     @include lg{
     }
   }
 
   #address-container{
-    padding-bottom: 3em;
 
     #phone-number-container{
       img{
@@ -350,19 +356,16 @@ Work Gallery
 
     .button-container{
       padding-top: 2em;
-      background-color: $secondary-color;
+      background-color: $light-primary-color;
       img{
         width: 25px;
       }
       a{
-        color: $primary-color;
-        border: solid 1px $primary-color;
+        color: $secondary-color;
+        border: solid 1px $white;
         &:hover{
-          background-color: $primary-color;
-          color: $white;
-        }
-        img:hover{
-          fill: $white;
+          background-color: $white;
+          color: $primary-color;
         }
         &:before,
         &:after{
@@ -378,6 +381,7 @@ Work Gallery
       margin-left:25%;
       margin-right: 25%;
       padding: 0;
+      color: $white;
     }
   }
 
@@ -393,8 +397,12 @@ Work Gallery
 
 #contact{
   color: $white;
-  background-color: $light-primary-color;
-  padding-bottom: 3em;
+  background-color: $acent-color-two;
+  padding-bottom: 2.2em;
+
+  h2{
+    margin: 0;
+  }
 
   form{
     width: 85%;
@@ -441,7 +449,7 @@ Work Gallery
       transition: all .5s ease;
       &:hover{
         background-color: $secondary-color;
-        color: $primary-color;
+        color: $acent-color-two;
       }
     }
 

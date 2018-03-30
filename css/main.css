@@ -540,7 +540,11 @@ Navigation
     top: .5em;
     color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    transition: color .3s; }
+    #nav-icons #menu-icon:hover {
+      color: #30a3b2;
+      font-size: 1.55em; }
 
 /*
 nav{
@@ -649,9 +653,10 @@ footer {
     padding: .7em;
     margin-left: 1em;
     margin-right: 1em;
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    transition: background-color .3s; }
     footer #social-media-links-container a:hover {
-      background-color: #48becd; }
+      background-color: #70CCD8; }
   footer #social-media-links-container img {
     display: block;
     width: 25px; }
@@ -660,7 +665,8 @@ footer {
     padding-top: 1em;
     padding-bottom: 8em; }
     footer p a {
-      color: #48becd; }
+      color: #30a3b2;
+      transition: color .3s; }
       footer p a:hover {
         color: #9c89b8; }
 
@@ -729,6 +735,8 @@ h1, h2, h3, h4 {
   .home-button a {
     font-size: 1.7em;
     background-color: #9c89b8; }
+    .home-button a:hover #phone-icon {
+      background-color: #70CCD8; }
 
 /**********************
 Hours of Operation
@@ -794,7 +802,7 @@ Hours of Operation
     margin-bottom: 0; }
   #services .service-offered .price {
     font-size: 1.1em;
-    color: #48becd;
+    color: #30a3b2;
     text-align: right;
     margin-top: 1em;
     margin-left: 4em;
@@ -907,35 +915,33 @@ Work Gallery
       font-size: 1.25em; } }
 
 #directions {
-  background-color: #e4dfec; }
+  background-color: #98dae3; }
   #directions h2 {
-    padding-bottom: 1em; }
-  #directions #address-container {
-    padding-bottom: 3em; }
-    #directions #address-container #phone-number-container img {
-      margin-left: 25%;
-      width: 20px; }
-    #directions #address-container .button-container {
-      padding-top: 2em;
-      background-color: #FAF8FE; }
-      #directions #address-container .button-container img {
-        width: 25px; }
-      #directions #address-container .button-container a {
-        color: #70CCD8;
-        border: solid 1px #70CCD8; }
-        #directions #address-container .button-container a:hover {
-          background-color: #70CCD8;
-          color: #fff; }
-        #directions #address-container .button-container a img:hover {
-          fill: #fff; }
-        #directions #address-container .button-container a:before, #directions #address-container .button-container a:after {
-          display: none;
-          background-color: #70CCD8; }
-    #directions #address-container p {
-      width: 50%;
-      margin-left: 25%;
-      margin-right: 25%;
-      padding: 0; }
+    padding-bottom: 1em;
+    color: #fff; }
+  #directions #address-container #phone-number-container img {
+    margin-left: 25%;
+    width: 20px; }
+  #directions #address-container .button-container {
+    padding-top: 2em;
+    background-color: #98dae3; }
+    #directions #address-container .button-container img {
+      width: 25px; }
+    #directions #address-container .button-container a {
+      color: #FAF8FE;
+      border: solid 1px #fff; }
+      #directions #address-container .button-container a:hover {
+        background-color: #fff;
+        color: #70CCD8; }
+      #directions #address-container .button-container a:before, #directions #address-container .button-container a:after {
+        display: none;
+        background-color: #70CCD8; }
+  #directions #address-container p {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0;
+    color: #fff; }
   @media (min-width: 992px) {
     #directions {
       float: left;
@@ -944,8 +950,10 @@ Work Gallery
 
 #contact {
   color: #fff;
-  background-color: #98dae3;
-  padding-bottom: 3em; }
+  background-color: #9c89b8;
+  padding-bottom: 2.2em; }
+  #contact h2 {
+    margin: 0; }
   #contact form {
     width: 85%;
     padding-left: 10%;
@@ -959,7 +967,7 @@ Work Gallery
       width: 90%;
       border-radius: .1rem; }
       #contact form input[type="text"]:focus, #contact form input[type="text"]:focus, #contact form input[type="email"]:focus, #contact form input[type="email"]:focus, #contact form textarea:focus, #contact form textarea:focus {
-        outline-color: #48becd; }
+        outline-color: #30a3b2; }
       #contact form input[type="text"]::placeholder, #contact form input[type="email"]::placeholder, #contact form textarea::placeholder {
         color: #959595;
         margin-left: .5em; }
@@ -987,7 +995,7 @@ Work Gallery
       transition: all .5s ease; }
       #contact form button:hover {
         background-color: #FAF8FE;
-        color: #70CCD8; }
+        color: #9c89b8; }
   @media (min-width: 992px) {
     #contact {
       display: inline-block;

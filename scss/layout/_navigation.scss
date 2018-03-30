@@ -64,6 +64,11 @@ Navigation
     color: rgba(0,0,0,0.7);
     cursor: pointer;
     font-size: 1.5em;
+    transition: color .3s;
+    &:hover{
+      color: $dark-primary-color;
+      font-size: 1.55em;
+    }
 
   }
 

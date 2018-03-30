@@ -14,7 +14,7 @@ $light-acent-color: lighten($acent-color-two, 10%);
 $light-acent-color-two: lighten($acent-color-two, 27%);
 //Dark colors
 
-$dark-primary-color: darken($primary-color, 10%);
+$dark-primary-color: darken($primary-color, 20%);
 $dark-acent-color: darken($acent-color, 5%);
 
 
@@ -26,4 +26,5 @@ $light-white-background-color: rgba(255,255,255, .4);
 //Text colors
 
 $text-color: #222;
+$text-color-lightish: #444;
 $light-text-color: lighten($text-color, 45%);
