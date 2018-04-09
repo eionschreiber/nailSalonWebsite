@@ -510,6 +510,28 @@ Navigation
       transition: 0.3s; }
       #mySideNav ul li a:hover {
         color: #70CCD8; }
+      @media (min-width: 768px) {
+        #mySideNav ul li a {
+          display: inline-block;
+          font-size: 1.2em; } }
+      @media (min-width: 992px) {
+        #mySideNav ul li a {
+          padding-left: 2em;
+          padding-right: 2em; } }
+    @media (min-width: 768px) {
+      #mySideNav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0; } }
+  @media (min-width: 768px) {
+    #mySideNav {
+      position: unset;
+      width: unset;
+      height: unset;
+      overflow: unset;
+      padding: 0;
+      background: none; } }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -523,11 +545,15 @@ Navigation
   right: .2em;
   font-size: 2.5em;
   margin-left: 50px; }
+  @media (min-width: 768px) {
+    #mySideNav .closebtn {
+      display: none;
+      margin-right: -54px; } }
 
 #nav-icons {
   text-align: center; }
   #nav-icons #logo {
-    width: 7em; }
+    width: 10em; }
     @media (min-width: 576px) {
       #nav-icons #logo {
         width: 8em; } }
@@ -545,6 +571,9 @@ Navigation
     #nav-icons #menu-icon:hover {
       color: #30a3b2;
       font-size: 1.55em; }
+    @media (min-width: 768px) {
+      #nav-icons #menu-icon {
+        display: none; } }
 
 /*
 nav{
@@ -1001,5 +1030,20 @@ Work Gallery
       display: inline-block;
       width: 50%;
       margin-right: -4px; } }
+
+.img-gallery {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #30a3b2; }
+
+.gallery-img {
+  width: 100%;
+  background-color: blue; }
+
+.box1 {
+  grid-row: 1/3;
+  grid-column: 1/3; }
 
 /*# sourceMappingURL=main.css.map */

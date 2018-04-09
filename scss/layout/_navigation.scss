@@ -2,6 +2,7 @@
 Navigation
 *****************************************************/
 #mySideNav{
+
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -25,7 +26,29 @@ Navigation
       &:hover{
         color: $primary-color;
       }
+      @include md{
+        display: inline-block;
+        font-size: 1.2em;
+      }
+      @include lg{
+        padding-left: 2em;
+        padding-right: 2em;
+      }
     }
+    @include md{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  @include md{
+    position: unset;
+    width: unset;
+    height: unset;
+    overflow: unset;
+    padding: 0;
+    background: none;
   }
 }
 
@@ -40,6 +63,10 @@ Navigation
   right: .2em;
   font-size: 2.5em;
   margin-left: 50px;
+  @include md{
+    display: none;
+    margin-right: -54px;
+  }
 }
 
 
@@ -48,7 +75,7 @@ Navigation
   text-align: center;
 
   #logo{
-    width: 7em;
+    width: 10em;
     @include sm{
       width: 8em;
     }
@@ -68,6 +95,9 @@ Navigation
     &:hover{
       color: $dark-primary-color;
       font-size: 1.55em;
+    }
+    @include md{
+      display: none;
     }
 
   }
