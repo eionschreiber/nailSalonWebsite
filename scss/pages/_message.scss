@@ -1,0 +1,23 @@
+.message-sent{
+  background-color: $primary-color;
+  color: $white;
+  h1{
+    padding-top: 4em;
+    font-size: 1.8em;
+    font-family: $base-font-family;
+    @include md{
+      font-size: 2.2em;
+    }
+    }
+  h2{
+    text-transform: inherit;
+    line-height: 1.6em;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5em;
+    @include md{
+      width: 100%;
+    }
+
+  }
+}

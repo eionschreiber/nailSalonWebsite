@@ -12,7 +12,7 @@
 
     mail($mailTo, $subject, $txt, $headers);
 
-    header("Location: index.php?mailsend");
+    header("Location: message_sent.html");
   }
 
 
